@@ -4,7 +4,7 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 DEPENDANCIES = -MMD -MP
 NO_DIR = --no-print-directory
 MAKE := $(MAKE) -j $(NO_DIR)
-NAME = claptrap
+NAME = scavtrap
 
 # Debugging flags
 CFLAGS_DEBUG = -Wall -Wextra -g3 -D DEBUG=1 -std=c++98
@@ -28,12 +28,14 @@ P_INC = ./
 #############################################################################################
 # Headers
 INC = \
-	ClapTrap.hpp
+	ClapTrap.hpp \
+	ScavTrap.hpp \
 
 # Source files
 SRC = \
 	main.cpp \
 	ClapTrap.cpp \
+	ScavTrap.cpp \
 
 LIBS = \
 
